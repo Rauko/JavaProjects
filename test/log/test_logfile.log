@@ -1,0 +1,7 @@
+2016-04-05 20:58:57 INFO  App:24 - Default locale is uk_UA
+2016-04-05 20:58:57 INFO  App:46 - Program replied : Добрий вечір, Світ!
+2016-04-05 20:59:30 INFO  App:28 - Default locale is uk_UA
+2016-04-05 20:59:30 ERROR App:29 - This locale is not supported. Communication with user will be in English
+2016-04-05 20:59:30 INFO  App:46 - Program replied : Good evening, World!
+2016-04-05 20:59:39 INFO  App:20 - Default locale is uk_UA
+2016-04-05 20:59:39 INFO  App:46 - Program replied : Добрый вечер, Мир!
