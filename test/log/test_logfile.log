@@ -5,3 +5,31 @@
 2016-04-05 20:59:30 INFO  App:46 - Program replied : Good evening, World!
 2016-04-05 20:59:39 INFO  App:20 - Default locale is uk_UA
 2016-04-05 20:59:39 INFO  App:46 - Program replied : Добрый вечер, Мир!
+2016-04-05 23:23:53 INFO  App:20 - Default locale is uk_UA
+2016-04-05 23:23:53 INFO  App:50 - Program replied : Доброй ночи, Мир!
+2016-04-06 15:25:03 INFO  App:20 - Default locale is uk_UA
+2016-04-06 15:25:03 INFO  App:45 - Program replied : Добрый день, Мир!
+2016-04-06 15:25:19 INFO  App:20 - Default locale is uk_UA
+2016-04-06 15:25:19 INFO  App:34 - Program replied : Доброе утро, Мир!
+2016-04-06 15:25:19 INFO  App:46 - Program replied : Добрый день, Мир!
+2016-04-06 15:25:39 INFO  App:20 - Default locale is uk_UA
+2016-04-06 15:25:39 INFO  App:34 - Program replied : Добрый день, Мир!
+2016-04-06 15:25:39 INFO  App:46 - Program replied : Добрый день, Мир!
+2016-04-06 15:39:01 INFO  App:31 - Default locale is uk_UA
+2016-04-06 15:39:27 INFO  App:31 - Default locale is uk_UA
+2016-04-06 15:40:40 INFO  App:31 - Default locale is uk_UA
+2016-04-06 15:42:46 INFO  App:31 - Default locale is uk_UA
+2016-04-06 15:49:01 INFO  App:30 - Default locale is uk_UA
+2016-04-06 15:49:01 INFO  App:35 - Program replied : Good day, World!
+2016-04-06 15:49:33 INFO  App:30 - Default locale is uk_UA
+2016-04-06 15:49:33 INFO  App:35 - Program replied : Good day, World!
+2016-04-06 15:49:49 ERROR App:23 - This locale is not supported. Communication with user will be in English
+2016-04-06 15:49:49 INFO  App:35 - Program replied : Good day, World!
+2016-04-06 15:53:18 INFO  App:31 - Default locale is uk_UA
+2016-04-06 15:53:18 INFO  App:36 - Program replied : Good day, World!
+2016-04-06 15:53:28 INFO  App:31 - Default locale is uk_UA
+2016-04-06 17:24:07 INFO  App:31 - Default locale is uk_UA
+2016-04-06 17:25:37 INFO  App:20 - Default locale is uk_UA
+2016-04-06 17:25:37 INFO  App:38 - Program replied : Добрый день, Мир!
+2016-04-06 17:49:30 INFO  App:20 - Default locale is uk_UA
+2016-04-06 17:49:30 INFO  App:38 - Program replied : Добрый день, Мир!

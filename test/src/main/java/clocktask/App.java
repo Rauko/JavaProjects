@@ -18,35 +18,39 @@ public class App {
 		if (Locale.getDefault().getDisplayLanguage().equals("русский") || Locale.getDefault().getDisplayLanguage().equals("українська")) {
 			bundle = ResourceBundle.getBundle("TestBundle_ru_RU", defaultLocale);
 			log.info("Default locale is " + defaultLocale);
-			displayValues(bundle);
 	/*	} else if (Locale.getDefault().getDisplayLanguage().equals("українська")) {
 			bundle = ResourceBundle.getBundle("TestBundle_ru_UA", defaultLocale);
-			log.info("Default locale is " + defaultLocale);
-			displayValues(bundle);	*/
+			log.info("Default locale is " + defaultLocale);*/
 		} else /* if (Locale.getDefault().getDisplayLanguage().equals("English"))*/ {
-			bundle = ResourceBundle.getBundle("TestBundle_en_US", defaultLocale);
-			log.info("Default locale is " + defaultLocale);
 			log.error("This locale is not supported. Communication with user will be in English");
-			displayValues(bundle);
+			bundle = ResourceBundle.getBundle("TestBundle_en_US", defaultLocale);
 		}
+		display(bundle, getMyDayPeriod(getCurrentTime(bundle)));
     }
+
+	public static void display(ResourceBundle bundle, String message){
+		System.out.println(bundle.getString(message));
+		log.info("Program replied : " + bundle.getString(message));
+	}
 	
-	public static void displayValues(ResourceBundle bundle){
+	public static int getCurrentTime(ResourceBundle bundle){
 		DateFormat dateFormat = new SimpleDateFormat("HH");
-		Date date = new Date();
-		int currentHour = Integer.parseInt(dateFormat.format(date));
-		if(currentHour >= 6 && currentHour < 9){
-			System.out.println(bundle.getString("my.morning"));
-			log.info("Program replied : " + bundle.getString("my.morning"));
-		} else if (currentHour >= 9 && currentHour < 19){
-			System.out.println(bundle.getString("my.day"));
-			log.info("Program replied : " + bundle.getString("my.day"));
-		} else if (currentHour >= 19 && currentHour < 23){
-			System.out.println(bundle.getString("my.evening"));
-			log.info("Program replied : " + bundle.getString("my.evening"));
-		} else {
-			System.out.println(bundle.getString("my.night"));
-			log.info("Program replied : " + bundle.getString("my.night"));
-		}
+        Date date = new Date();
+        Integer currentHour = Integer.parseInt(dateFormat.format(date));
+        return currentHour;
+	}
+	
+	private static String getMyDayPeriod(int currentHour) {
+	        String dayPeriod;
+	        if(currentHour >= 6 && currentHour < 9){
+	        	dayPeriod = "my.morning";
+	        } else if (currentHour >= 9 && currentHour < 19){
+	        	dayPeriod = "my.day";
+	        } else if (currentHour >= 19 && currentHour < 23){
+	        	dayPeriod = "my.evening";
+	        } else {
+	        	dayPeriod = "my.night";
+	        }
+	        return dayPeriod;
 	}
 }
