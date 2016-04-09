@@ -14,17 +14,8 @@ public class App {
 	
 	public static void main(String[] args){
 		Locale defaultLocale = Locale.getDefault();
-		ResourceBundle bundle = null;
-		if (Locale.getDefault().getDisplayLanguage().equals("русский") || Locale.getDefault().getDisplayLanguage().equals("українська")) {
-			bundle = ResourceBundle.getBundle("TestBundle_ru_RU", defaultLocale);
-			log.info("Default locale is " + defaultLocale);
-	/*	} else if (Locale.getDefault().getDisplayLanguage().equals("українська")) {
-			bundle = ResourceBundle.getBundle("TestBundle_ru_UA", defaultLocale);
-			log.info("Default locale is " + defaultLocale);*/
-		} else /* if (Locale.getDefault().getDisplayLanguage().equals("English"))*/ {
-			log.error("This locale is not supported. Communication with user will be in English");
-			bundle = ResourceBundle.getBundle("TestBundle_en_US", defaultLocale);
-		}
+		ResourceBundle bundle = ResourceBundle.getBundle("TestBundle", defaultLocale);
+		log.info("Default locale is " + defaultLocale);
 		display(bundle, getMyDayPeriod(getCurrentTime(bundle)));
     }
 
@@ -40,7 +31,7 @@ public class App {
         return currentHour;
 	}
 	
-	private static String getMyDayPeriod(int currentHour) {
+	public static String getMyDayPeriod(int currentHour) {
 	        String dayPeriod;
 	        if(currentHour >= 6 && currentHour < 9){
 	        	dayPeriod = "my.morning";
